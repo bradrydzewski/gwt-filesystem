@@ -1,0 +1,13 @@
+<projectDescription>
+  <name>gwt-filesystem</name>
+  <comment>a GWT implementation of the HTML5 FileSystem API, including the BlobBuilder, FileReader and FileWriter. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+  <projects/>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>
