@@ -1,5 +1,5 @@
 Summary
--------
+=======
 
 This library adds browser-based FileSystem support to applications developed using Google Web Toolkit (GWT), based on the [HTML5 FileSystem specification](You can read the full specification at http://dev.w3.org/2009/dap/file-system/pub/FileSystem/)
 
@@ -7,22 +7,17 @@ This library adds browser-based FileSystem support to applications developed usi
 
 In short, this enables a web applications to read and write files to and from a Virtual File System. A great use case for such and API would be enabling Google Docs in offline mode, where users could read an write to a File System without an internet connection, and sync with Google's servers when connected.
 
-Support
--------
+Getting Started
+---------------
 
-This was built and tested for use in Google Chrome. It should, in theory, work with Firefox and Opera which have preliminary implementations of the API.
+First, it is highly recommended that you familiarize yourself with the HTML5 FileSystem API. There is a fantastic article on HTML5 Rocks [http://www.html5rocks.com/en/tutorials/file/filesystem/](http://www.html5rocks.com/en/tutorials/file/filesystem/)
+that walks you through all of the different functions and capabilities.
 
-The FileSystem API is not enabled by default in Chrome (as of version 14 canary). So you will need to add the following startup flags:
-> --unlimited-quota-for-files  --allow-file-access-from-files
-
-
-Setup
------
+You will need to enable the FileSystem API in Google Chrome (as of version 14 canary) by adding the following flags:
+    --unlimited-quota-for-files  --allow-file-access-from-files
 
 You will need to either download the jar or compile and include the jar in your GWT project's build path. In addition, you will need to include the following reference to the library in your application's module xml file:
     <inherits name='com.google.gwt.filesystem.FileSystem' />
-
-It is highly recommended that you familiarize yourself with the HTML5 FileSystem API. There is a fantastic article on HTML5 Rocks [http://www.html5rocks.com/en/tutorials/file/filesystem/](http://www.html5rocks.com/en/tutorials/file/filesystem/)
 
 Example Code
 ============
